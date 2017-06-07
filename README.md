@@ -1,1 +1,0 @@
-# spomer-dot-co
