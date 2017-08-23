@@ -118,7 +118,7 @@ header h1 a:hover {
   background-size: cover;
   color: #ffffff;
   height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
+  text-shadow: 02.5px 02.5px 02.5px #000000;
 }
 
 
@@ -141,7 +141,7 @@ header h1 a:hover {
   background-size: cover;
   color: #ffffff;
   height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
+  text-shadow: 02.5px 02.5px 02.5px #000000;
 }
 
 
@@ -157,6 +157,54 @@ header h1 a:hover {
   color: #fff;
 }
 
+.jumbotron_magic {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-image: url('http://spomer.co/photos/magic.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 02.5px 02.5px 02.5px #000000;
+}
+
+
+.jumbotron_magic h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron_magic h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+.jumbotron_poly {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-image: url('http://spomer.co/photos/poly.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 02.5px 02.5px 02.5px #000000;
+}
+
+
+.jumbotron_poly h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron_poly h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
 .jumbotron_infrared {
   display: flex;
   align-items: center;
@@ -164,7 +212,7 @@ header h1 a:hover {
   background-size: cover;
   color: #ffffff;
   height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
+  text-shadow: 02.5px 02.5px 02.5px #000000;
 }
 
 
@@ -187,7 +235,7 @@ header h1 a:hover {
   background-size: cover;
   color: #ffffff;
   height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
+  text-shadow: 02.5px 02.5px 02.5px #000000;
 }
 
 
@@ -210,7 +258,7 @@ header h1 a:hover {
   background-size: cover;
   color: #ffffff;
   height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
+  text-shadow: 02.5px 02.5px 02.5px #000000;
 }
 
 
@@ -235,11 +283,23 @@ section .row img {
 }
 
 section p {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 
+section p .index-bottom{
+  border: 5px;
+  text-decoration: bold;
+}
+
 section .row p {
+  font-size: 18px;
+  color: #000000;
+  padding: 0 2px;
+  margin: 0;
+}
+
+section .row .col-sm-12 p {
   font-size: 18px;
   color: #000000;
   padding: 0 2px;
@@ -290,10 +350,10 @@ header .col-sm-3 {
   margin: 0px
 }
 
-.col-sm-12 p {
+/*.col-sm-12 p {
   text-indent: 30px;
 }
-
+*/
 .row-blog .col-sm-10 p{
   margin: 0px
 
