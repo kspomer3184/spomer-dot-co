@@ -369,6 +369,10 @@ section .row .col-sm-10 p:hover{
 
 }
 
+.row-blog {
+  background-image: url("photos/prime.jpg");
+}
+
 .row-blog .row {
   margin-top: 10px;
   margin-bottom: 10px;
