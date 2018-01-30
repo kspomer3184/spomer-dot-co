@@ -359,6 +359,10 @@ header .col-sm-3 {
 
 }
 
+.blog-img img{
+  padding: 10px;
+}
+
 section .row .col-sm-10 p:hover{
   margin: 0px;
   text-decoration: none;
