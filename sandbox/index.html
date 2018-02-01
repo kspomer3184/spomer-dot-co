@@ -2,11 +2,15 @@
 <body>
 
 <script>
-if(prompt("Password","") == "poop"){
-window.location.href = "true.html";
+var input = prompt("Password","");
+if(input == "poop"){
+	window.location.href = "true.html";
+}
+if(input == null){
+	return;
 }
 else{
-window.location.href = "false.html";
+	window.location.href = "false.html";
 }
 </script>
 
