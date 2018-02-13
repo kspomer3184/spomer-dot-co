@@ -32,30 +32,60 @@
 <section class="container">
 <div class="col-sm-12">
   <br><p style = "font-size:18px">
-    Every student at Florida Poly is required to take a set of sequential courses, Design 1 & Design 2, wherein groups of
-    build a solution to an industry supplied problem. Taking Design in the first year that it was offered on a large scale
-    presented a lot of challenges, but even more opportunities.
+	Every student at Florida Poly is required to take a set of sequential courses, Design 1 & Design 2, wherein groups of
+	build a solution to an industry supplied problem. Taking Design in the first year that it was offered on a large scale
+	presented a lot of challenges, but even more opportunities.
     <br><br>
-    We were randomly assigned groups and projects, and in the beginning (and for the next 7 months), it seemed like someone
-    somewhere was out to get us. We were a group of complete strangers, and were given a project that no one understood. I
-    vividly remember sitting in class with out faculty advisor, staring that the problem statement and trying to figure out
-    what it was that they wanted from us.
-    <br><br>
+	We were randomly assigned groups and projects, and in the beginning (and for the next 7 months), it seemed like someone
+	somewhere was out to get us. We were a group of complete strangers and were given a project that no one understood. I
+	vividly remember sitting in class with our faculty advisor, staring at the problem statement and trying to figure out
+	what it was that they wanted from us.
+    <br><br></p>
     <p style="font-weight: bold">The Problem:</p>
     <p style="font-style: italic; padding: 30px">
-      "We are building rectifying antennas and selective emmitters for energy harvesting of thermal radiation. Ideal thermal
+      "We are building rectifying antennas and selective emitters for energy harvesting of thermal radiation. Ideal thermal
       radiation is described by Plank's Law and is broadband. The purpose of this project is to design a mechanism for measuring
       thermal radiation and reporting power density across the band of frequencies expected to be present according to Plank's
       Law at varying distances from the source. Students choose the thermal source, the method for measuring or calculating power
       density, the appropriate sensor, and the platform for measuring at different distances. We are building a similar device
-      to measure the output of or selective emmiter as well as the performance of the rectenna in response to the known performance
+      to measure the output of or selective emitter as well as the performance of the rectenna in response to the known performance
       of a real thermal source at 28.3THz/10.6µm."
-      <br>                                              - Gabriel Saffold <br><br>
+      <br> &emsp;&emsp;&emsp;                                             - Gabriel Saffold <br><br>
     </p>
-    
-
+    <p style = "font-size:18px">
+        After what seemed like weeks of staring at that paragraph and several phone calls with our industry sponsor, we seemed to finally
+	have an idea about what was going on. The problem was that we had absolutely no idea how to solve the given problem. In essence, we
+	needed to build a robotic platform that needed to rotate a sensor around a source, as well as be able to automatically adjust the 
+	distance between the two components. This was not necessarily the difficult part. We needed to be able to adjust the distance 
+	in increments of 1/4 of the wavelength emitted by the device; 2.65 µm.
+    <br></p>
+        <div class="col-sm-5"><img class="img-responsive" src="model.jpg"></div>
+  <p style = "font-size:18px"><br>
+	After long days of looking at parts that were either way too expensive or not nearly accurate enough, I finally had a breakthrough.
+	A combination of a simple off the shelf stepper motor and a gear set with about an 8:1 reduction could provide linear motion in 2.65µm
+	increments. The hardest part about constructing this proposed design would be making a custom set of gears.
+    <br><br>
+	After a couple more weeks of design, it became apparent that we were not going to be able to build the system that was originally 
+	called for. The antennas had not been fabricated, so we would be using a simple IR led and a cheap lux sensor. This meant that the 
+	linear accuracy was much less critical, and we would only have to build a proof of concept.    
+    <br><br>
+	Once all of our parts came in, we frantically began construction. We used the school's laser cutter to fabricate the structure with
+	acrylic. We then secured the stepper motors, belts, rails, sensors and their platforms to the structure. After that, I hooked up all
+	the electronics and began programming. Because the sensor we used only had a library made for Arduino, we used an Arduino Uno to
+	gather sensor data, and transmit it through a serial connection to our Raspberry Pi. The Pi handled the motors and data collection. 
+	The collected data would then be stored in a csv file, where we could manipulate and graph it.
+	<br><br>
+	[This shows a graph of measured infrared radiation(vertical) versus the angle of the sensor(horizontal) at a set distance]
+    <br></p>
+        <div class="col-sm-5"><img class="img-responsive" src="results.jpg"></div>
+  <p style = "font-size:18px"><br>
+	While we were never able to achieve the results we originally pictured, this project turned out pretty awesome for the things that 
+	it taught us. I learned about laser cutting, stepper motors, gear ratios, and formally documenting a project. But the most important 
+	thing that I learned was how to work with a team with a very diverse background and skill set. It taught me how to explain technical things
+	to people who may not have the same knowledge as me. In the end I am very thankful for the seemingly impossible project that scared us
+	so much in the beginning.
   </p>
-
+<div class="col-sm-12"><img class="img-responsive" src="close.jpg"></div>
 
 </div>
 </section>
