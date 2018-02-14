@@ -165,6 +165,29 @@ header h1 a:hover {
   color: #fff;
 }
 
+.jumbotron_bearly {
+  display: flex;
+  align-items: center;
+  background-image: url('http://spomer.co/photos/bearly.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 02.5px 02.5px 02.5px #000000;
+}
+
+
+.jumbotron_bearly h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron_bearly h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
 .jumbotron_magic {
   display: flex;
   align-items: center;
@@ -193,7 +216,7 @@ header h1 a:hover {
   display: flex;
   align-items: center;
   align-content: center;
-  background-image: url('http://spomer.co/photos/poly.jpg');
+  background-image: url('http://spomer.co/poly/ist.jpg');
   background-size: cover;
   color: #ffffff;
   height: 500px;
@@ -262,7 +285,7 @@ header h1 a:hover {
 .jumbotron_polyhacks {
   display: flex;
   align-items: center;
-  background-image: url('http://spomer.co/photos/polyhacks2.jpg');
+  background-image: url('http://spomer.co/polyhacks/demo.jpg');
   background-size: cover;
   color: #ffffff;
   height: 500px;

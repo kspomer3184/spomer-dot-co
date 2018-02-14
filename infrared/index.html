@@ -21,11 +21,11 @@
 
 <div id="header"></div>
 
-<section class="jumbotron_infrared">
+<section class="jumbotron_infrared" style="overflow: auto;">
 	<div class="container">
     <div class="row text-center">
-      <h2>Infrared Characterization</h2>
-      <h3>Testing out the future of renewable energy</h3>
+      <h2>Senior Design</h2>
+      <h3>Infrared Characterization</h3>
     </div>
   </div>
 </section>
@@ -33,12 +33,12 @@
 <div class="col-sm-12">
   <br><p style = "font-size:18px">
 	Every student at Florida Poly is required to take a set of sequential courses, Design 1 & Design 2, wherein groups of
-	build a solution to an industry supplied problem. Taking Design in the first year that it was offered on a large scale
+	students design and build a solution to an industry supplied problem. Taking Design in the first year that it was offered on a large scale
 	presented a lot of challenges, but even more opportunities.
     <br><br>
-	We were randomly assigned groups and projects, and in the beginning (and for the next 7 months), it seemed like someone
+	We were randomly assigned groups and projects. In the beginning (and for the next 7 months), it seemed like someone
 	somewhere was out to get us. We were a group of complete strangers and were given a project that no one understood. I
-	vividly remember sitting in class with our faculty advisor, staring at the problem statement and trying to figure out
+	vividly remember sitting in class with our faculty advisor, staring at the problem statement, trying to figure out
 	what it was that they wanted from us.
     <br><br></p>
     <p style="font-weight: bold">The Problem:</p>
@@ -53,16 +53,17 @@
       <br> &emsp;&emsp;&emsp;                                             - Gabriel Saffold <br><br>
     </p>
     <p style = "font-size:18px">
-        After what seemed like weeks of staring at that paragraph and several phone calls with our industry sponsor, we seemed to finally
-	have an idea about what was going on. The problem was that we had absolutely no idea how to solve the given problem. In essence, we
-	needed to build a robotic platform that needed to rotate a sensor around a source, as well as be able to automatically adjust the 
+        After what seemed like weeks of staring at that paragraph and several phone calls with our industry sponsor, we finally
+	had an idea about what was going on. We then face the rather daunting task of solving the problem.. In essence, we
+	needed to build a robotic platform that could rotate a sensor around a source and automatically adjust the 
 	distance between the two components. This was not necessarily the difficult part. We needed to be able to adjust the distance 
-	in increments of 1/4 of the wavelength emitted by the device; 2.65 µm.
+	in increments of 1/4 of the wavelength emitted by the device or 2.65µm. Such a small distance seemed nearly impossible, and even
+	our industry sponsor said that "it might not even be possible".
     <br></p>
         <div class="col-sm-5"><img class="img-responsive" src="model.jpg"></div>
   <p style = "font-size:18px"><br>
 	After long days of looking at parts that were either way too expensive or not nearly accurate enough, I finally had a breakthrough.
-	A combination of a simple off the shelf stepper motor and a gear set with about an 8:1 reduction could provide linear motion in 2.65µm
+	A combination of a simple off-the-shelf stepper motor paired with a gear set with around an 8:1 reduction could provide linear motion in 2.65µm
 	increments. The hardest part about constructing this proposed design would be making a custom set of gears.
     <br><br>
 	After a couple more weeks of design, it became apparent that we were not going to be able to build the system that was originally 
@@ -70,12 +71,12 @@
 	linear accuracy was much less critical, and we would only have to build a proof of concept.    
     <br><br>
 	Once all of our parts came in, we frantically began construction. We used the school's laser cutter to fabricate the structure with
-	acrylic. We then secured the stepper motors, belts, rails, sensors and their platforms to the structure. After that, I hooked up all
-	the electronics and began programming. Because the sensor we used only had a library made for Arduino, we used an Arduino Uno to
+	acrylic. We then secured the stepper motors, belts, rails, sensors and their platforms to the acrylic base. After that, I hooked up all
+	the electronics and began programming. Because the sensor we used currently only had a library made for the Arduino platform, we used an Arduino Uno to
 	gather sensor data, and transmit it through a serial connection to our Raspberry Pi. The Pi handled the motors and data collection. 
 	The collected data would then be stored in a csv file, where we could manipulate and graph it.
 	<br><br>
-	[This shows a graph of measured infrared radiation(vertical) versus the angle of the sensor(horizontal) at a set distance]
+	[This shows a graph of measured infrared radiation in lux (vertical) versus the angle of the sensorin degrees (horizontal) at a set distance]
     <br></p>
         <div class="col-sm-5"><img class="img-responsive" src="results.jpg"></div>
   <p style = "font-size:18px"><br>
