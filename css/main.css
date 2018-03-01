@@ -441,10 +441,31 @@ section .row .col-sm-10 p:hover{
   color: #000000;
 }
 
-.row-blog .row h4:hover {
+.col-sm-4{
+  text-decoration: none;
+  color: #000000;
+  padding: none;
+  position: relative;
+}
+
+
+.col-sm-4 a:hover{
+  text-decoration: none;
+  color: #000000;
+  padding: none;
+  position: relative;
+}
+
+.blog{
   text-decoration: none;
   color: #000000;
 }
+
+.blog:hover{
+  text-decoration: none;
+  color: #000000;
+}
+
 
 .btn.btn-primary {
   border-radius: 2px;
